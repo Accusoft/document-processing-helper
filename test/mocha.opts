@@ -1,0 +1,1 @@
+test/**/*.test.js --reporter mocha-multi-reporters --reporter-options configFile=mocha-multi-reporters-config.json --timeout 30000
