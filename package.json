@@ -1,12 +1,32 @@
 {
   "name": "@accusoft/document-processing-helper",
-  "version": "1.0.0-beta.7",
+  "version": "1.0.0-beta.8",
   "license": "MIT",
   "description": "Simple node.js API for document processing, powered by PrizmDoc Server.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Accusoft/document-processing-helper.git"
   },
+  "keywords": [
+    "document processing", 
+    "document conversion", 
+    "file conversion",
+    "office conversion",
+    "native office conversion", 
+    "image conversion",
+    "word to pdf", 
+    "office", 
+    "conversion",
+    "convert", 
+    "image", 
+    "word",
+    "docx",
+    "pdf",
+    "tiff", 
+    "png", 
+    "jpeg", 
+    "jpg"
+  ],
   "main": "lib/main.js",
   "files": [
     "lib/**/*.js"
