@@ -21,13 +21,23 @@ describe('documentProcessingHelper', () => {
     fs.mkdirSync(joinPath(__dirname, '../test-output'));
   });
 
+  it('converts a txt to a pdf', async () => {
+
+    const output = await documentProcessingHelper.convert({
+      input: joinPath(__dirname, 'documents/test.txt'),
+      outputFormat: 'pdf'
+    });
+    await output[0].saveToFile(joinPath(__dirname, '../test-output/output-from-txt.pdf'));
+    expect(fs.existsSync(joinPath(__dirname, '../test-output/output-from-txt.pdf'))).to.equal(true);
+  });
+
   it('converts a docx to a pdf', async () => {
     const output = await documentProcessingHelper.convert({
       input: joinPath(__dirname, 'documents/test.docx'),
       outputFormat: 'pdf'
     });
-    await output[0].saveToFile(joinPath(__dirname, '../test-output/output.pdf'));
-    expect(fs.existsSync(joinPath(__dirname, '../test-output/output.pdf'))).to.equal(true);
+    await output[0].saveToFile(joinPath(__dirname, '../test-output/output-from-docx.pdf'));
+    expect(fs.existsSync(joinPath(__dirname, '../test-output/output-from-docx.pdf'))).to.equal(true);
   });
 
   it('converts a pdf to a docx', async () => {

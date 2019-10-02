@@ -1,6 +1,6 @@
 {
   "name": "@accusoft/document-processing-helper",
-  "version": "1.0.0-beta.9",
+  "version": "1.0.0-beta.10",
   "license": "MIT",
   "description": "Simple node.js API for document processing, powered by PrizmDoc Server.",
   "repository": {
